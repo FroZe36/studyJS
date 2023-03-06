@@ -1,17 +1,19 @@
 'use strict'
 
-let result = '';
+//TASK 1
+
+let resultString = '';
 const length = 7;
 for (let i = 1; i < length; i++) {
 
     for (let j = 0; j < i; j++) {
-        result += '*';
+        resultString += '*';
     }
 
-    result += '\n';
+    resultString += '\n';
 }
 
-console.log(result)
+console.log(resultString)
 
 for (let i = 5; i <= 10; i++) {
     console.log(i)
@@ -40,3 +42,35 @@ for (i = 5; i < 11; i++) {
     arrayOfNumbers[i - 5] = i;
 }
 console.log(arrayOfNumbers)
+
+// TASK 2*
+
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const resultArr = [];
+
+for (let i = 0; i < arr.length; i++) {
+    resultArr[i] = arr[i];
+}
+console.log(resultArr);
+
+const data = [5, 10, 'Shopping', 20, 'Homework'];
+
+for (let i = 0; i < data.length; i++) {
+    switch (typeof data[i]) {
+        case 'number': 
+            data[i] *= 2;
+            break
+        case 'string':
+            data[i] += ' - done';
+            break
+    }
+}
+console.log(data);
+
+data = [5, 10, 'Shopping', 20, 'Homework'];
+const result = [];
+
+for (let i = 0; i < data.length; i++) {
+    result[i] = data[4 - i];
+}
+console.log(result);
