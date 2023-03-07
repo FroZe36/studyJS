@@ -74,3 +74,21 @@ for (let i = 0; i < data.length; i++) {
     result[i] = data[4 - i];
 }
 console.log(result);
+
+//TASK 3**
+
+const lines = 5;
+let resultTree = '';
+
+for(let i = 0; i <= lines; i++) {
+
+    for (let j = 0; j < lines - i; j++) {
+        resultTree += " ";
+    }
+    for (let j = 0; j < 2 * i + 1; j++) {
+        resultTree += "*";
+    }
+    resultTree += "\n";
+}
+
+console.log(resultTree)
